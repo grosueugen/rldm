@@ -28,19 +28,15 @@ public class RollAction extends SimpleAction implements FullActionModel {
 	@Override
 	protected State performActionHelper(State s, GroundedAction action) {
 		int side = rollDie();
+		ObjectInstance agent = s.getFirstObjectOfClass(CLASS_AGENT);
 		if (die.isGood(side)) {
-			State winState = s.copy();
-			ObjectInstance winAgent = winState.getFirstObjectOfClass(CLASS_AGENT);
-			winAgent.setValue(STATE_PLAY, (getCurrentAmount(s)+side));
-			winAgent.setValue(STATE_END, IN_PROGRESS);
-			return winState;
+			agent.setValue(STATE_PLAY, (getCurrentAmount(s)+side));
+			agent.setValue(STATE_END, IN_PROGRESS);			
 		} else {
-			State loseState = s.copy();
-			ObjectInstance loseAgent = loseState.getFirstObjectOfClass(CLASS_AGENT);
-			loseAgent.setValue(STATE_PLAY, 0);
-			loseAgent.setValue(STATE_END, LOSE);
-			return loseState;
+			agent.setValue(STATE_PLAY, 0);
+			agent.setValue(STATE_END, LOSE);
 		}
+		return s;
 	}
 	
 	private int rollDie() {
@@ -55,7 +51,10 @@ public class RollAction extends SimpleAction implements FullActionModel {
 	@Override
 	public List<TransitionProbability> getTransitions(State s1, GroundedAction action) {
 		List<TransitionProbability> res = new ArrayList<>();
-		double winProbability = die.winProbability()/die.getNrGoodSides();
+		double wp = die.winProbability();
+		int nrGoodSides = die.getNrGoodSides();
+		
+		double winProbability = wp/nrGoodSides;
 		double loseProbability = die.loseProbability();
 		int currentAmount = getCurrentAmount(s1);
 		

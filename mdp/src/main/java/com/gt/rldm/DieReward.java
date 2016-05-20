@@ -21,7 +21,7 @@ public class DieReward implements RewardFunction {
 				int moneyEarned = (afterRollAmount - beforeRollAmount);
 				return moneyEarned;
 			} else {
-				int lostAllMoney = beforeRollAmount;
+				int lostAllMoney = -beforeRollAmount;
 				return lostAllMoney;
 			}
 		} else if (isEndAction) {

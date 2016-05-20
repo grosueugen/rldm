@@ -14,6 +14,8 @@ import burlap.oomdp.singleagent.SADomain;
 public class DieDomain implements DomainGenerator {
 	
 	public static final String STATE_PLAY = "play";
+	public static final int MAX_AMOUNT = 1000;
+	
 	public static final String STATE_END = "end";
 	public static final int WIN = 1;
 	public static final int LOSE = 2;
@@ -35,9 +37,8 @@ public class DieDomain implements DomainGenerator {
 		Domain domain = new SADomain();
 		ObjectClass agent = new ObjectClass(domain, CLASS_AGENT);
 		
-		int maxAmount = 1000;
 		Attribute play = new Attribute(domain, STATE_PLAY, AttributeType.INT);
-		play.setLims(0, maxAmount);
+		play.setLims(0, MAX_AMOUNT);
 		agent.addAttribute(play);
 		
 		Attribute end = new Attribute(domain, STATE_END, AttributeType.INT);

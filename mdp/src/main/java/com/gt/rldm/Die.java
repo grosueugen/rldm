@@ -21,7 +21,7 @@ public class Die {
 	}
 	
 	public double winProbability() {
-		return getNrGoodSides()/n;
+		return (double)getNrGoodSides()/ (double) n;
 	}
 	
 	public double loseProbability() {

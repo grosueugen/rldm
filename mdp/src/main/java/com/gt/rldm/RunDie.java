@@ -37,18 +37,19 @@ public class RunDie {
 	private static void runVI(Die die) {
 		DieDomain dieDomain = new DieDomain(die);
 		Domain domain = dieDomain.generateDomain();
-		State initialState = dieDomain.createInitialState(domain);
+		State is = dieDomain.createInitialState(domain);
 		DieReward dieReward = new DieReward();
-		DieTerminalState dieTs = new DieTerminalState();
+		DieTerminalState ts = new DieTerminalState();
 		HashableStateFactory hashingFactory = new SimpleHashableStateFactory();
 		
-		ValueIteration planner = new ValueIteration(domain, dieReward, dieTs, 1, hashingFactory, 0.001, 100);
-		planner.toggleReachabiltiyTerminalStatePruning(true);
-		double initialStateValue = planner.value(initialState);
+		ValueIteration planner = new ValueIteration(domain, dieReward, ts, 1, hashingFactory, 0.001, 100);
+		planner.toggleReachabiltiyTerminalStatePruning(true);				
+		Policy policy = planner.planFromState(is);
+		
+		double initialStateValue = planner.value(is);
 		System.out.println("initialStateValue: " + initialStateValue);
 		
-		Policy policy = planner.planFromState(initialState);
-		EpisodeAnalysis episodeAnalysis = policy.evaluateBehavior(initialState, dieReward, dieTs);
+		EpisodeAnalysis episodeAnalysis = policy.evaluateBehavior(is, dieReward, ts);
 		double discountedReturn = episodeAnalysis.getDiscountedReturn(1);
 		System.out.println("return: " + discountedReturn);
 	}
