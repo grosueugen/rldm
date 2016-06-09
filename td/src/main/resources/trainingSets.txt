@@ -1,0 +1,1000 @@
+D C B 0
+D E D E D E D E F 1
+D E D E D C B 0
+D E D E D E F 1
+D C B C B C D C B C B 0
+D C B C B C B C D E D E D C B 0
+D E F 1
+D C B 0
+D E D C B 0
+D E D C D C B 0
+D E D E F 1
+D C D C B 0
+D E D E F 1
+D E D C B 0
+D C D E D C B C B 0
+D E F 1
+D E D E D C B 0
+D C D E F 1
+D E D E D E F E D E F E D C B C D C B 0
+D E D E D C D C D E D E D C D E F E F E D E F 1
+D E D E F E D E D E D E F 1
+D C B 0
+D C D C B C B 0
+D E D E F E D C D C B C B 0
+D C B 0
+D C D C B 0
+D C B 0
+D E D E D C B 0
+D E D C B 0
+D C B C D E D C D C D E D E D E F 1
+D C B 0
+D C D C D E D C D E D C D E D E F E D C D E D E F E D C D E D C B C D C D C B 0
+D E D C D C D C B C B 0
+D C B C B 0
+D E D C D C D C D E F E D E D E D E D C D E F 1
+D E D E F E D E F 1
+D E D C D E D E F E D E F 1
+D E F E D E F E F E D C D E D C B 0
+D C D E D C B C B 0
+D E D C D C B 0
+D E F 1
+D E F 1
+D E D C D C D C B C D C D C D C D E F 1
+D C B 0
+D E D E F 1
+D C D E F E D E F E F E F E F E D E D C B C D E D C D E F E D E F 1
+D C B 0
+D C D C D C B C B C D E F 1
+D E D C B C B 0
+D E D C D E D C B 0
+D E D C D E D C D C D E F 1
+D E F E F 1
+D E D C D C B C D C D C D C D C D E D C B 0
+D E F E F E F 1
+D C B C B C B 0
+D C B 0
+D E D E D E F 1
+D E F 1
+D C B C D C B 0
+D C B C B C D C B 0
+D C D C B 0
+D E D C B C B C B 0
+D C B 0
+D C B C D E D E F 1
+D C D C B C B C B 0
+D C B 0
+D E F E D E F 1
+D E F E F 1
+D E F 1
+D C B 0
+D E F 1
+D E F 1
+D C D C B C D C B 0
+D C D E F E D C B C B 0
+D E F 1
+D C D E D C B C D E F 1
+D C D E D C B 0
+D C D E F E F 1
+D C B C D C B C D C D C D C D E D E F 1
+D C B 0
+D E D E D C B C D E F E D E D E D C B C B 0
+D E D C D C B C D C D C D C D C D E F 1
+D C D C D C D C B 0
+D E F 1
+D E D C D C B C B C B 0
+D E F 1
+D E D E F E F E F E D C B 0
+D C D C D C B C B C D E D C B C D E D E D E D C D C B C D C D C D E D C B 0
+D E F E F 1
+D E D E D E F E F E F 1
+D E D E F 1
+D E D E F 1
+D E F E D E D C B C D E F 1
+D E F E D C D E D C B C D E F E F E D C D E F 1
+D E D C B C B C B 0
+D C D E F E D C B 0
+D C D C B 0
+D C D E F 1
+D C B C D C D E D E D E F 1
+D E F 1
+D E F E D C D E F E F E D C D C B C D C B 0
+D E F 1
+D C B 0
+D C D E D E F 1
+D C D C B 0
+D C D E F E F 1
+D C D C B C B 0
+D E D C D E D C D C B C D C B C D C D C D E D E D E D E D C B 0
+D C D C B C D E D C B 0
+D C D C B 0
+D C B C B C B 0
+D E F 1
+D C B C D E F E D E D E F E D E F E F 1
+D E D E F 1
+D E F E D E F 1
+D C B 0
+D C D E F E F E F 1
+D C B 0
+D C B 0
+D C D C B C B C B 0
+D E D E F E F 1
+D E F E D C D C D C B C D E D E F 1
+D C D C D C D E D E D E F E D E D C B C B C B 0
+D C B C B 0
+D E F E F 1
+D E D E F 1
+D E F 1
+D E F 1
+D E D E D E D E F 1
+D E F 1
+D E F E D E D E F 1
+D C D C D E D E F 1
+D C B 0
+D E F 1
+D C B 0
+D C B C B 0
+D E F E F 1
+D C D C D C B C D C B 0
+D E F 1
+D E F 1
+D E F 1
+D C B C B 0
+D C D E F 1
+D C B C B 0
+D C B C B C B 0
+D C B 0
+D E D E F E F 1
+D E D E F E F 1
+D C B C D C D C D C D C D C B 0
+D C B 0
+D E D C D E F 1
+D C B 0
+D E F E D E D E D C B 0
+D C D C D C B 0
+D E D E D C B 0
+D E F E D C D E F E D E D C B C D C B C D E F 1
+D C B C B C D C D C B C B 0
+D C B 0
+D E F E F E D C B C B C D C B 0
+D C D E F 1
+D C D E F E F E D C D C B 0
+D E F E F E D C B 0
+D E F E D C D C D E D E D C B 0
+D E D E D C B 0
+D E F E F 1
+D E F E F 1
+D C B C B 0
+D C B C B 0
+D E F 1
+D C D E F E D C D E D E D C D C B C D E F E F 1
+D E D E D C D E F E D E D C B 0
+D C D E F 1
+D E F E F 1
+D E F E F E F E D E F E F E D E D C D C D E D C D C B 0
+D E D C B C B 0
+D C D E D E D C B C D E D C B 0
+D C B C B 0
+D C D E D E F 1
+D E F 1
+D E D C D C B 0
+D C D E F E D E D E D E D C B 0
+D C D C D C B C D C B 0
+D C B 0
+D E F 1
+D E D C D C B C B C B C D E D C B 0
+D C B 0
+D E D C B C D C D E F E D C B C B 0
+D C B C B C B C D E D E D E F 1
+D E F 1
+D C D C B C B 0
+D C D E F 1
+D C B 0
+D E D E D E F 1
+D E F 1
+D E D E D C B C D C D C B C D C D E F 1
+D C D E D E D E F 1
+D C B C B 0
+D C D E F 1
+D C B C D C B C D E D E D C D E F 1
+D E D C D C D E F E F E F 1
+D C D C B C D C D E D E D E F E D C D E D C B 0
+D C B 0
+D E F E F E D C B 0
+D C B 0
+D E D E D C B C B 0
+D C D C B C B C D C D E D C B C D E F 1
+D E D E D C B 0
+D C D C B 0
+D E F 1
+D C B 0
+D C B 0
+D C D C B 0
+D C D E F E D C B C B C D C B C D E D C D C B C B 0
+D E F E F 1
+D E F E D C B 0
+D C D C B C B C D C B 0
+D E F 1
+D E D C D E D C B C B C D E F 1
+D C D C B 0
+D C B C D E F 1
+D C D C D E F E F E F E D C D E F 1
+D C B C B 0
+D E D E F 1
+D C B 0
+D C B 0
+D E D E F E D E D E F 1
+D E F E F 1
+D C B 0
+D E F E D E D E D C B C D E F 1
+D C B C D E D C B C D E F 1
+D E D C B C B 0
+D C B 0
+D E F E D C B 0
+D E D E D E D E F E D E D C D C B C B C D E F 1
+D E F E D C B C D C B 0
+D C D E D C D E D C B 0
+D C B 0
+D C D C D E D C D C D E F 1
+D C D C D E D E F 1
+D E F 1
+D E F 1
+D C B C D C B C D E D C B 0
+D C B C B C D C B 0
+D C B C B C D C B C D E F 1
+D E D E D E D E D E D E D C B 0
+D E D C D C D E F E D E D C D E D E F E D C B 0
+D C D C B 0
+D E F 1
+D E D C B C D E F E D C B C D C B 0
+D E D E D C D E F 1
+D C B C B C D E D C D E D C B C D C B C B C D C B 0
+D C D E F 1
+D E F E D C B C B 0
+D E F 1
+D E F E D C D C D E F 1
+D C B C D C B 0
+D E D E D C B 0
+D E F 1
+D E D C B 0
+D E D C D E D C B C D E F 1
+D E F 1
+D E F E D C D E D E F 1
+D E D E F E F 1
+D E F E D E D C D C D E D E F 1
+D E F 1
+D E D E F E F E D C B 0
+D E F E F E D E D E D C B 0
+D C B 0
+D E D C B 0
+D E D C B 0
+D C D E D E D E D E F 1
+D C D E D E F 1
+D E D C B 0
+D E D E D C D C D E F E D C B C D E F 1
+D E D E D E D E D C B 0
+D E D E F E D C B 0
+D E D E F 1
+D E D C B 0
+D C D C B 0
+D E D E D C B C D C B 0
+D C B C D E F 1
+D C D C B 0
+D C B C B 0
+D E D E F 1
+D E F 1
+D C B 0
+D E F E D C B C D C B C D C D E D E F E D C D E F E F E D E D C B C D E D E D C D C B C B C D C D C D E D E F E D E D E F E F E F E F E F E D E F E D C D E F E D E F E D C D C D C D E D C B 0
+D C B 0
+D E D C D C D E F 1
+D E F E F E F E D C D E D C D E F 1
+D E D C D C D E D C D C D C B 0
+D E F E D E D C D C D E F 1
+D C B C D E D C B 0
+D C B 0
+D E F E F 1
+D E D E D C D E F E F E F 1
+D E F 1
+D E F 1
+D E D E D C B C D C B C B C B C D E D C B C D E F E F E F 1
+D C B 0
+D C D C B 0
+D E D C B 0
+D C D C B C D C B 0
+D E F 1
+D E D C D C D C D E F E F 1
+D C D E F 1
+D C B C B C D C D C D C D E D E F E F E D C D E F E D E F E F E D E D C B 0
+D E D C B 0
+D C D C B C B C B C B C D C D C D C D C D C D C B C D E F 1
+D E F 1
+D E D E D E F 1
+D E F 1
+D E F E F 1
+D C D E D E F 1
+D E F 1
+D E F 1
+D C D E D E D C B C B 0
+D E D C B 0
+D C D E D C D C D E F E D C D C B C B 0
+D E D E D C D C D C B 0
+D E F 1
+D C D E D E D E D E F E D C B 0
+D E D C D C B C B 0
+D C D C D E D E D C B C B 0
+D E D E F 1
+D E F E D E D C B 0
+D C D C D C D E D E F E F 1
+D E F 1
+D E F 1
+D E D E D C B C B C B C B 0
+D E D E F E F E F E D C D E D E D C D E D C D C B C D E F E F E F 1
+D C D C D C D E D C D E F 1
+D E D C B C B 0
+D E F 1
+D C D E D E F 1
+D C B 0
+D C B C B 0
+D E F E D C B 0
+D C D C B 0
+D E F E F 1
+D E D C D C B C D E F 1
+D C B 0
+D C D C B 0
+D C B 0
+D E D E D C B 0
+D C B 0
+D E D C D E D C B 0
+D C B C D C D C D E D E F E D C D E F E F E F E F 1
+D E D C D C B 0
+D C B C D E F E D E D C B 0
+D E D E D C B 0
+D E F E D C B C D E F E D E D C D C B 0
+D E D E F 1
+D C D C B 0
+D E D E F 1
+D C B C D E D C B 0
+D E D C D C B 0
+D C D C B C B C B C B C D C B C D E F 1
+D C D E F E F E F 1
+D C D E F E F E F 1
+D C D E F 1
+D C B C D E D C B 0
+D E D E D C D C B 0
+D E D E F E F E F E F E D C D E F E D C D C D E F 1
+D C B 0
+D C D C B 0
+D E F 1
+D E F E F 1
+D C D C D E D C B 0
+D E D E D C D E D C B C D C D C D E F 1
+D E D C D E D C B C D E D E F 1
+D E F 1
+D C B 0
+D E D E D E F E F E F E F E F E F E F E F 1
+D C D E F E D E F 1
+D C D E F 1
+D E F 1
+D C D E D C D E F 1
+D E F 1
+D E D E D C D C D E F 1
+D E F 1
+D C B 0
+D E F E F E F 1
+D C D E F 1
+D C D C B C D C B C B C B 0
+D E D C D C D C B 0
+D E D E D C B C B 0
+D C B C B C B 0
+D C B 0
+D C D C B 0
+D C D E F 1
+D C B 0
+D C B 0
+D C D C D C B 0
+D C D E F E D C D E D C D E F E F 1
+D C B 0
+D C B 0
+D C D C B 0
+D E F E D C D E F E F E F E F 1
+D E D C B C D E D C D C B 0
+D C D E F E D E F E F 1
+D C B C D C B 0
+D C D C B 0
+D C D E D C D E F E F 1
+D C D E D C D C B 0
+D C B 0
+D E F E F E D C B 0
+D C D E D C D C D E F E F E D C D C D E F 1
+D E F E F 1
+D E F E D E F 1
+D C D C D E D E F E D C D E D C B C D E F E F 1
+D C B 0
+D C D E F E D E D C D C B C D E D C B 0
+D E F E F E F E D C D C B 0
+D C B C D E F 1
+D E F 1
+D C B 0
+D C D E F E F E D E D E D E F 1
+D C D E D E F E F 1
+D E F E F 1
+D C D C D E D C B 0
+D E F E F 1
+D E F 1
+D E F E F E D C B 0
+D C B 0
+D C B C B 0
+D C D E F E F 1
+D C B C D E F E F E D E D E D C B C B 0
+D C B 0
+D E F 1
+D C D C D E F 1
+D C D E F 1
+D C D C D E F E F 1
+D C B 0
+D E F E F E D E F 1
+D C D C B 0
+D C D E D E D C B C B C D E F 1
+D C B 0
+D C D C B C B C D C B C B 0
+D C D E F 1
+D C B 0
+D C B C D C D E F 1
+D C B C D E D E D C D C D E F E D C B C D E D C D E D C D E F 1
+D E F E F 1
+D E D E F 1
+D C B C B C B 0
+D E F E F E D C D E D E F E D C B 0
+D C B C D C B C B 0
+D C B C B C D C B C D E F 1
+D E F E F 1
+D C D E D E F E D E F E F E F E D C D C D E F E D C D C D E F E F E D E F 1
+D E F 1
+D C B 0
+D E D E F 1
+D E F E F E D C D E D C D C D C D C B C D E F 1
+D E F 1
+D C D C D E F 1
+D E F 1
+D E F E F E F E D E F E F E D E D E F 1
+D E F 1
+D C B 0
+D C B 0
+D E F 1
+D C B C D C D E F E F 1
+D E D C D E D C B 0
+D E F E F E F 1
+D C D C D E F 1
+D C B C B C D E D E F 1
+D E D E F E F E D C D E D E F E F E F 1
+D E D C B C B 0
+D E F E D E F E F E D C B 0
+D C B C B C D E D E F E F 1
+D C D C D C B 0
+D E F 1
+D C D C D E F 1
+D C B 0
+D C B 0
+D E D C B 0
+D C D E F 1
+D C D C D E D C B C B C D C D C D C B 0
+D E F 1
+D C D C B C B 0
+D E F E F 1
+D E F 1
+D C D E F 1
+D C D E D E D E D E F 1
+D E D C D E F 1
+D E F E D E F E D C D C D C B C D C D E D C D C D E F 1
+D E D E F 1
+D E F 1
+D E D C B C D C D C B 0
+D E D E D E D E D C D E D E D C B C D E D E F 1
+D E D C B 0
+D E D E F E D E F 1
+D C D C B 0
+D E D E D E F E D C B 0
+D C B C D C D E D C D E F E D E F 1
+D E F 1
+D C D E D E F E D C B 0
+D E F 1
+D E F 1
+D C B 0
+D C D E D C D E D C D C B 0
+D E F 1
+D E F 1
+D C D E F 1
+D C B C B 0
+D C D C D C D C B C D C B C D C D C B C D C B 0
+D C B 0
+D E D C B C D E F E D C D E F 1
+D C D C D C D E D E F E D E F 1
+D C B 0
+D C B 0
+D E D E D E D C B 0
+D E F E F 1
+D C D E D E D C D C D C B 0
+D E F 1
+D C B C D C D C B 0
+D C D C B 0
+D E F E D E D E F 1
+D E D E D C B 0
+D E D C D C D E D E D E D E F E D C D E D E F 1
+D C D C B C D E D C B C D E F E F 1
+D C B C B C D E D C D C B 0
+D C B 0
+D E F 1
+D C B 0
+D C B C B C D E D E F E D E D E F 1
+D C D C B 0
+D C B C B 0
+D C D E D C B C D C B 0
+D C B C D E D C D E D E F 1
+D E F E D E D C D C B C B C B 0
+D C B C B C D C D C D C D E F E D E F E F E F E F E D C D E F E F E F E D E F 1
+D E F 1
+D E F E F 1
+D C D C D C D E F 1
+D E F E D E F E D E D C B 0
+D C D E D C B C D C B 0
+D C D E F E F E D E D C B C B 0
+D C B C D C B C B C B C D C D E F E F E D C D E D C D C D E F E D E F E F 1
+D C B 0
+D E D E D E F E D E D C B 0
+D E D C D C B 0
+D C D C B 0
+D C B 0
+D C B C D C D C B 0
+D C D C D E F 1
+D C B C B 0
+D C B 0
+D C B 0
+D C D E D E D E D C B 0
+D E D E D E D C B 0
+D E D C B 0
+D C D C D E F E F E F 1
+D E D E F 1
+D E D E F E D E F 1
+D C D C D E F E F 1
+D E D E F 1
+D E F 1
+D C D E D C D E D E D E F 1
+D E F 1
+D E F E D E D C B 0
+D C B 0
+D C B C D C D E D C D C B 0
+D E D E F 1
+D C B C B 0
+D E D C D E F E F E F E F 1
+D E D C B 0
+D C D C D C D C D E D C B 0
+D C D C B 0
+D E F E F E F 1
+D E F 1
+D E F E D E F E F E F 1
+D E F E D C B 0
+D C B 0
+D C B C B 0
+D C B 0
+D C D C B C D C B 0
+D C B C D C B 0
+D C D C B 0
+D E D E F 1
+D E F 1
+D C D C D C D C B 0
+D E F E D C D E F 1
+D E D C D E D C D C D E F E F E F 1
+D E D C B C B C D E F E D C B C D C B 0
+D C B 0
+D C B C B 0
+D E D E F E F 1
+D E D C D C B C B 0
+D C D C D E F E F E F 1
+D E D E D E F 1
+D C D E D E F E F 1
+D C D C B C B C D C B 0
+D C B 0
+D C D E D C B 0
+D C D C D C D C B C B C B C D E D C B 0
+D E D C D C B C D E D C D E D C D C B C B C D E D E D E F E D E D E F E D C D C D C D C D C D C B 0
+D E D E F E D C B C D E F E F E D C D E F 1
+D E D C B C D C B C D C D E F 1
+D C B C B C B 0
+D E F 1
+D C B C B C D C B C B 0
+D C D C D C B 0
+D E D C B 0
+D C D C D C B C B C D C D C B C B C B C B 0
+D E F E D C B 0
+D C B C B C D E F 1
+D C B 0
+D C D E F E D E D E F 1
+D E D E D E D C B C D E D C D C B 0
+D C D E F 1
+D E D E D E F 1
+D C B 0
+D E D C B 0
+D E D C D C D E D C B C B C D C D C D C B 0
+D C D C B 0
+D C B 0
+D C D C D E D C D C D C B 0
+D C D E F 1
+D C B 0
+D E D E F E D E D C B 0
+D E D E F E F E F 1
+D E D C D E F E F E D C B C D C B 0
+D C B C B C D C B 0
+D E F E F E F E F 1
+D C D E F 1
+D C D E F E F 1
+D C D E F 1
+D E D E D E D C B 0
+D E D E D E F 1
+D C B 0
+D E F 1
+D C D C D C B 0
+D C D C B 0
+D E D C B 0
+D C D E D E F 1
+D E F 1
+D E D C D C D C D C B C B 0
+D C B 0
+D E D E D E D C B C D E F 1
+D C B C B C B C B C B 0
+D E F 1
+D E F E D E F 1
+D E D C B 0
+D E F 1
+D C D E F E D E D C B 0
+D E D C D C B 0
+D C B C D E D C D C D E D E D E F E F 1
+D E F 1
+D C D E F E F 1
+D E F E F E F 1
+D C D E F E F E D E D E F E D E D C D E D C B 0
+D E F E D E D E F E F E F E F 1
+D C B 0
+D C D C D E F 1
+D C D C B 0
+D C B 0
+D E F E F E F E F 1
+D E D C D C B C D E D C D C D C D E F E F 1
+D E F 1
+D E D C D E F E D E D C D E F E D C D C D C B 0
+D E D C B 0
+D C D C B 0
+D E F 1
+D C B 0
+D E F 1
+D E D C D C D E D C B 0
+D C B C D C D E F E D E D C D C D E D E D E D E D C B 0
+D C B 0
+D E F 1
+D C B 0
+D E F E F E F 1
+D E F 1
+D E D E F 1
+D C D E F E D E F 1
+D C D C B 0
+D E F 1
+D C B C B C B 0
+D E D E D C D C D E D C D C D E F 1
+D C B 0
+D C B 0
+D E F 1
+D E D E F E F E D C D C D E F E F 1
+D C D C B C B 0
+D C B 0
+D C B 0
+D E D C B 0
+D E F 1
+D E F 1
+D C D E D C B C D E F E D C D E D E F 1
+D C B 0
+D E D E F 1
+D C D E F E D E D E F E D C B C B 0
+D C D C D C B C B 0
+D E D C B 0
+D C B C D C B 0
+D E F E F 1
+D E F 1
+D E F 1
+D E D E D E D C B 0
+D E D E D E D E F 1
+D C B 0
+D E D C D C B C B 0
+D E F 1
+D C B C B C B C D E D E F E F E F E D C B C B 0
+D E F E D C D E D C D C D C D E D C D C B 0
+D E F 1
+D C D C B 0
+D E F 1
+D E F E D C D C B 0
+D E F E F E D E F E D C D C D C D C B 0
+D E D C D E D E F 1
+D C B 0
+D C B C B C D E F 1
+D C D E F 1
+D C D E D E F E F E D E D C B C D E D E F 1
+D E F 1
+D E D C B 0
+D E D C D C D C B C D C B 0
+D E F 1
+D E D C B C D C D C D C B 0
+D E D E F 1
+D C B C B 0
+D E D E D E D C B C B C B 0
+D E D E F E D C B 0
+D E F 1
+D C D C B 0
+D E D E F E F E D C B 0
+D E D E F 1
+D E D E D C D C D E D E D C D E D E D C B C D E D E F E D E D C B 0
+D C B C B C B 0
+D C B 0
+D E D C D C D E D C D E D E D C D C B C B 0
+D C D E F 1
+D C B C B C B 0
+D C D E D E D C D C B C B 0
+D E F 1
+D C D E D E D C B 0
+D E D C D C B 0
+D E D C B C B C B C D E F E F 1
+D E D C B 0
+D C B 0
+D E F 1
+D E F 1
+D C B 0
+D E D C B 0
+D C D E D C D E D E D E F 1
+D C D E F E D E F 1
+D C B 0
+D E D E D C B 0
+D C D E F 1
+D E F E D C D C D C B 0
+D E F 1
+D C D C B C B 0
+D E F 1
+D E F E D C D E D E D E F 1
+D C D E F E F E F 1
+D C D C B 0
+D E F 1
+D E F E F 1
+D E F E F E D C B C B 0
+D E F E D E D E F E D C D E D C D C D C B 0
+D C B C D C D E D E D E D C B C D C D C D E F E F E F E D C D C D C B C D E D E D E F 1
+D E F E F E F E D E D E D C B 0
+D C B 0
+D E F E F 1
+D C D E D C B 0
+D E D E D E D E D E F E F 1
+D C B 0
+D C B 0
+D C D C B C D C D C D C B 0
+D E F 1
+D C D E F E F E D C B C D E F E D C D C B 0
+D E F E F E F 1
+D E F 1
+D E D C B 0
+D C B 0
+D C D C B C B 0
+D C B C D E F 1
+D C D E D C D C D C D C B 0
+D C B C D C B 0
+D E D E D E F 1
+D C B 0
+D C D E D E D C B 0
+D C D E F E D E F E D C B C D E D C B C D C D C D C B C D C D C D E F 1
+D C B C B 0
+D C B C D E F E D E F E F E F E D E D C B C D E D C B 0
+D C B 0
+D E F 1
+D E F E F E D E F 1
+D C B C D E D E F 1
+D C D C B C D E D E F 1
+D E D C D C B 0
+D E D E D E F E F E F E F E D E F E D E D E D E D E D E D C B 0
+D C D C D C D C D C B 0
+D C B C B 0
+D E D C D C D C B 0
+D C B C D C D C B 0
+D C D C D C D C B C D E D C D E F 1
+D E F E F E D C D C D C D E F E F 1
+D C B C D E F E D C D E D E F E F E D C D C B 0
+D E D E F 1
+D E F 1
+D C B C B 0
+D E F 1
+D E D E D E D E F 1
+D C B C B C B 0
+D E D E F E F 1
+D C D E D C D C B C B 0
+D E D E D E D C B 0
+D C D E D C B C D C B 0
+D E F E D E D C D C B C D C D C D E F E D E D E F E D C D C D E F 1
+D E F 1
+D E D E F E F E D C D E D C D E F E F 1
+D E D C B C D C B C B 0
+D E D E D E D E D C B 0
+D E D C B 0
+D E D E D E F E F E F 1
+D E D C B 0
+D E D C D E D E D E D C B C B C B C D C B C D C B C D C D C D E F E F E D C D C D C B C B C B C B C D E D E F E F E D E F E F E D C B 0
+D E F 1
+D E F E D E D C B 0
+D E F 1
+D E F E F 1
+D C B C B 0
+D E F 1
+D C B C D E F E F E F 1
+D E D C D C B C B C D C D C D E F E F 1
+D C D E D E F E D E D E D E F 1
+D C D C B C D C B C B 0
+D E F E F E F 1
+D E D C B 0
+D C B C B 0
+D E F 1
+D E D E D E F E F 1
+D C D C B 0
+D E D E F 1
+D C B 0
+D C D C B C B C B C B 0
+D C B 0
+D C B C D C B 0
+D C D C B C D E D C B C D C D C D C D C B 0
+D E F 1
+D E D C D E F E F 1
+D C D C D C D C B C D C D E D E D E D C B C B 0
+D E F 1
+D C B C D C B 0
+D C B 0
+D E D E D C B C D E F 1
+D C B 0
+D C B 0
+D E D E D C D C B C D C D E F E F E D E F E D C B 0
+D C B 0
+D E F 1
+D E F E F 1
+D E D E F 1
+D C B 0
+D E D E F 1
+D C D C B C B 0
+D C B C B C B C B 0
+D E D C D C B C B 0
+D C B C D E F 1
+D E F 1
+D E D E D C D C B 0
+D C D E D C D C D C D C B 0
+D C B C D E F 1
+D E F 1
+D C D E F E D E F 1
+D C B C B 0
+D C D C B C B C D E D E F E F E D E D C D C D C D C D C B C B 0
+D C D C D C D E F E D C D C B 0
+D C B 0
+D C D E D C D C D C B C D E D C D E F E D C D E D C B 0
+D C D E F 1
+D C B C B 0
+D C B C B C B 0
+D E D C B 0
+D E D E F 1
+D C B 0
+D E F E D E F 1
+D E D E F E D E F E F E F 1
+D E D E F 1
+D E F 1
+D E F E D E D E F E F 1
+D E D E D E D E F E D E F 1
+D C B 0
+D C D E D C B C B 0
+D C B 0
+D E D E F E D C D E F 1
+D C D E F E D E D C D E F E F 1
+D C D C B 0
+D C B C B 0
+D E D C D E D E F E D C B 0
+D E F 1
+D C B 0
+D C B 0
+D E D C B C B 0
+D E F E D E F E D C B C D C B C B 0
+D C D C B 0
+D E F 1
+D E F 1
+D E F E F E D E D C D C D C D C D C D E F 1
+D E F E D C D C B 0
+D C D E D C D C D E F 1
+D C B C B 0
+D C D C D C D E F 1
+D C B 0
+D C D C B 0
+D E F E D C D E D C B C B C D E D E F 1
+D E D C D C B C B C B 0
+D E F 1
+D E D C B C D C D C D C B 0
+D E F 1
+D C B C B 0
+D C D E D C D C B 0
+D E D C B 0
+D E D C B 0
+D C B C D C B 0
+D C B 0
+D C B 0
+D E F 1
+D E D C B 0
+D C D C D C D C D E D E F E D E F E D E D C D E D E F 1
+D E F E F 1
+D C D E F E D C B 0
+D C B C D E D E D E F E D C D E F E F E F E D E D E F 1
+D E D C B 0
+D C D E F 1
+D E F E F E D C D E F 1
+D C B 0
+D E F E D E D E F 1
+D C D E D C B C D E D C D C D C D C B C D E D E D E D C B 0
+D C B C D C D C B 0
+D E F E D C D C B 0
+D E F E F 1
+D C B 0
+D C B C B C D C D C B 0
+D C D E D E F 1
+D C D E F E F 1
+D C B 0
+D C D E F E D E D C D C B C B 0
+D C B C D E F 1
+D C D E D E F 1
+D E D E D E D E D C D E D E F 1
+D C D E F E D E D C D E D E F E F E D E D E D C D C B 0
+D C B C B C D C D E F 1
+D E F E D E F 1
+D C D E F 1
+D C D C D E F E F E F 1
+D E F E F 1
+D C D E F 1
+D E F 1
+D E D C B C D C D E F 1
+D C D C D E D E D E D E F 1
+D E D E F E D E F E F E F 1
+D E D C B C B 0
+D E D E F 1
+D C B 0
+D E D E D C D C D E D C B 0
+D E F E F 1
+D E F 1
+D C B 0
+D C D E D E F 1
+D E D C D C D C B 0
+D E D E D E F E F 1
+D C D E F 1
+D E F E D C D E F E F E D C D E F 1
+D E F E F E F 1
+D E D C D C B 0
+D C B 0
+D E F 1
+D E D E F E F 1
+D C D E D C D C D C D C B C B C D E F E F 1
+D C B 0
+D C B 0
+D E F 1
+D E F 1
+D E F E D C D C B C D C D E D E F 1
+D C B C D E F 1
+D C D E D C B C B C B C B C D C B 0
+D C D C B 0
+D C B C B C D E D E F E D C D C D E F 1
+D C D C B C B C D E D E D C D E D C B 0
+D C B 0
+D C D E F E F E F 1
+D E D E F E F 1
+D E F 1
+D E F 1
+D C D E F E F E D C D C B C B C D C B C B C B C B 0
+D E F 1
+D E D E D C B 0
+D E D C D E F 1
+D C B 0
+D C B C D C D C D E D C D E F 1
+D E F 1
+D E D E F E D E D E F E F 1
+D C B 0
+D E D C D C D C D E D E D E D E D C B C B 0
