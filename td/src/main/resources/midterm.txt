@@ -1,0 +1,21 @@
+1. Pseudocode for algorithms to generate the graphs
+2. How do I generate the training sets?
+3. By the TD delta update rule:
+dwt = alpha*(Pt+1 - Pt)*sum(x1+x2+...+xt)
+Q: how can we look in the future Pt+1 to compute dwt?
+We can only compute w after the end of the sequence, after we know all results!
+Even though the pdf says we can!
+4. How to represent vectors: use apache commons math classes
+5. SL vs TD: which one approaches best the w(ideal)=[1/6,2/6,3/6,4/6,5/6] array?
+6. The alg to generate first graph is the following:
+init w randomly (according to theorem, this alg always converges)
+repeat
+ for each TS(i)
+   delta-w = 0
+   for each Seq(j)
+   	compute delta-w(Seq(j), alpha, lambda) -> the change of w for each observation according to alpha, lambda
+   delta-w += delta-w(Seq(j), alpha, lambda)
+   w += delta-w	
+until changes in w are smaller than epsilon
+computeRMS(w-ideal, w)
+7. Figure 3: what does it mean "average over the training sets"?
