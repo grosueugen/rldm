@@ -9,7 +9,13 @@ public class TrainingSet {
 	private final List<Sequence> sequences = new ArrayList<>(n);
 	
 	public TrainingSet() {
-		compute();
+		this(true);
+	}
+	
+	public TrainingSet(boolean generate) {
+		if (generate) {
+			compute();
+		} 
 	}
 
 	private void compute() {
@@ -30,6 +36,14 @@ public class TrainingSet {
 			if (i < (n-1)) sb.append("\n");
 		}
 		return sb.toString();
+	}
+
+	public void addSequence(Sequence s) {
+		this.sequences.add(s);
+	}
+
+	public int size() {
+		return sequences.size();
 	}
 
 }

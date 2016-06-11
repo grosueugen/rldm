@@ -13,11 +13,11 @@ public class Sequence {
 	private List<RealVector> observations = new ArrayList<>();
 	private int outcome;
 	
-	public final RealVector B = new OpenMapRealVector(new Double[]{1D, 0D, 0D, 0D, 0D});
-	public final RealVector C = new OpenMapRealVector(new Double[]{0D, 1D, 0D, 0D, 0D});
-	public final RealVector D = new OpenMapRealVector(new Double[]{0D, 0D, 1D, 0D, 0D});
-	public final RealVector E = new OpenMapRealVector(new Double[]{0D, 0D, 0D, 1D, 0D});
-	public final RealVector F = new OpenMapRealVector(new Double[]{0D, 0D, 0D, 0D, 1D});
+	public final static RealVector B = new OpenMapRealVector(new Double[]{1D, 0D, 0D, 0D, 0D});
+	public final static RealVector C = new OpenMapRealVector(new Double[]{0D, 1D, 0D, 0D, 0D});
+	public final static RealVector D = new OpenMapRealVector(new Double[]{0D, 0D, 1D, 0D, 0D});
+	public final static RealVector E = new OpenMapRealVector(new Double[]{0D, 0D, 0D, 1D, 0D});
+	public final static RealVector F = new OpenMapRealVector(new Double[]{0D, 0D, 0D, 0D, 1D});
 	
 	private final Map<Integer, RealVector> intToVector = new HashMap<>();
 	{
@@ -30,6 +30,11 @@ public class Sequence {
 	
 	public Sequence() {
 		compute();
+	}
+	
+	public Sequence(List<RealVector> observations, int outcome) {
+		this.observations.addAll(observations);
+		this.outcome = outcome;
 	}
 
 	private void compute() {
