@@ -53,7 +53,7 @@ public class TrainingSet {
 		RealVector res = new OpenMapRealVector(new double[] {0D, 0D, 0D, 0D, 0D});
 		for (Sequence sequence : sequences) {
 			RealVector deltaW = sequence.computeDeltaW(alpha, lambda, w);
-			res.add(deltaW);
+			res = res.add(deltaW);
 		}
 		return res;
 		
