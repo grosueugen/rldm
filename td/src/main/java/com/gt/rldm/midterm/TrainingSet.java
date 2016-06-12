@@ -3,6 +3,9 @@ package com.gt.rldm.midterm;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.commons.math3.linear.OpenMapRealVector;
+import org.apache.commons.math3.linear.RealVector;
+
 public class TrainingSet {
 	
 	private final int n = 10;
@@ -44,6 +47,16 @@ public class TrainingSet {
 
 	public int size() {
 		return sequences.size();
+	}
+
+	public RealVector computeDeltaW(double alpha, double lambda, RealVector w) {
+		RealVector res = new OpenMapRealVector(new double[] {0D, 0D, 0D, 0D, 0D});
+		for (Sequence sequence : sequences) {
+			RealVector deltaW = sequence.computeDeltaW(alpha, lambda, w);
+			res.add(deltaW);
+		}
+		return res;
+		
 	}
 
 }

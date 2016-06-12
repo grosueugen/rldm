@@ -78,5 +78,45 @@ public class Sequence {
 		sb.append(outcome);
 		return sb.toString();
 	}
+
+	public RealVector computeDeltaW(double alpha, double lambda, RealVector w) {
+		RealVector res = new OpenMapRealVector(new double[] {0D, 0D, 0D, 0D, 0D});
+		for (int i = 0; i < observations.size(); i++) {
+			RealVector deltaWt = computeDeltaW(alpha, lambda, w, i);
+			res = res.add(deltaWt);
+		}
+		return res;
+	}
+
+	private RealVector computeDeltaW(double alpha, double lambda, RealVector w, int t) {
+		double diffNextPredictions = successivePredictions(w, t);
+		RealVector sumPrevPredictions = previousPredictions(lambda, t);
+		return sumPrevPredictions.mapMultiply(alpha * diffNextPredictions);
+	}
+
+	private RealVector previousPredictions(double lambda, int t) {
+		RealVector res = new OpenMapRealVector(new double[] {0D, 0D, 0D, 0D, 0D});
+		for (int i = 0; i <= t; i++) {
+			RealVector obs = observations.get(i);
+			double lambdaPow = Math.pow(lambda, (t-i));//power + i = t => power = t-i
+			RealVector obsLambda = obs.mapMultiply(lambdaPow);
+			res = res.add(obsLambda);
+		}
+		return res;
+	}
+
+	private double successivePredictions(RealVector w, int t) {
+		RealVector xt = observations.get(t);
+		double wTxt = w.dotProduct(xt);
+		double wTxt1;
+		boolean lastObservation = (t == observations.size()-1);
+		if (lastObservation) {
+			wTxt1 = outcome;
+		} else {
+			RealVector xt1 = observations.get(t+1);
+			wTxt1 = w.dotProduct(xt1);
+		}
+		return (wTxt1 - wTxt);
+	}
 	
 }
