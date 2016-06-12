@@ -19,3 +19,5 @@ repeat
 until changes in w are smaller than epsilon
 computeRMS(w-ideal, w)
 7. Figure 3: what does it mean "average over the training sets"?
+8. When should I exit in RepeatedPresentation?
+After all training sets or after each training set (should I compute almostSame())?

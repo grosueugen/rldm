@@ -56,7 +56,6 @@ public class TrainingSet {
 			res = res.add(deltaW);
 		}
 		return res;
-		
 	}
 
 }

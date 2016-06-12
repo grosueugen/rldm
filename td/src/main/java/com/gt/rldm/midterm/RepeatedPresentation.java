@@ -14,11 +14,11 @@ public class RepeatedPresentation {
 	
 	private final int dimension = 5;
 	
-	private final double[] idealW = {1/((double)6), 2/((double)6), 3/((double)6), 4/((double)6), 5/((double)6)};
-	
 	private final double alpha;
 	private final double lambda;
 	private final double epsilon;
+	
+	private RealVector w;
 	
 	public RepeatedPresentation(String filePath, double alpha, double lambda, double epsilon) {		
 		this.alpha = alpha;
@@ -30,15 +30,19 @@ public class RepeatedPresentation {
 	private void compute(String filePath) {
 		List<TrainingSet> trainingSets = new DataGenerator(filePath).getTrainingSets();
 		double[] initialValues = initW();
-		RealVector w = new OpenMapRealVector(initialValues);
-		RealVector oldW = w;
+		RealVector currentW = new OpenMapRealVector(initialValues);
+		RealVector prevW = null;
+		int iterations = 0;
 		do {
+			iterations++;
+			prevW = currentW;
 			for (TrainingSet trainingSet : trainingSets) {
-				oldW = w;
-				RealVector deltaW = trainingSet.computeDeltaW(alpha, lambda, w);
-				w = w.add(deltaW);
+				RealVector deltaW = trainingSet.computeDeltaW(alpha, lambda, currentW);
+				currentW = currentW.add(deltaW);
 			}
-		} while (almostSame(oldW, w));
+		} while (!almostSame(prevW, currentW));
+		this.w = currentW;
+		System.out.println(iterations);
 	}
 
 	private boolean almostSame(RealVector oldW, RealVector newW) {
@@ -57,6 +61,10 @@ public class RepeatedPresentation {
 			res[i] = Math.random();
 		}
 		return res;
+	}
+	
+	public RealVector getW() {
+		return w;
 	}
 
 }
