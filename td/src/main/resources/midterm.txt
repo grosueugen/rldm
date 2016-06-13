@@ -21,3 +21,6 @@ computeRMS(w-ideal, w)
 7. Figure 3: what does it mean "average over the training sets"?
 8. When should I exit in RepeatedPresentation?
 After all training sets or after each training set (should I compute almostSame())?
+9. It is amazing that regardless of the init of w, the RMS is always the same for the same <alpha, lambda>!
+
+10. Memorie: 2 numere, nu n

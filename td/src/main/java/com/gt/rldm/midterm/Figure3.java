@@ -9,13 +9,13 @@ public class Figure3 {
 	
 	public static void main(String[] args) {
 		String filePath = "D:\\projects\\rldm\\td\\src\\main\\resources\\trainingSets.txt";
-		double alpha = 0.1;
+		double alpha = 0.01;
 		double lambda = 0.1;
 		double epsilon = 0.0001;
 		RepeatedPresentation rp = new RepeatedPresentation(filePath, alpha, lambda, epsilon);
 		RealVector w = rp.getW();
 		double rms = computeRMS(w);
-		System.out.println(rms);
+		System.out.println("RMS: " + rms);
 	}
 
 	private static double computeRMS(RealVector w) {

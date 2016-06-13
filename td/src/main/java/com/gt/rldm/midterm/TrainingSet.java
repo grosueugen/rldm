@@ -48,7 +48,7 @@ public class TrainingSet {
 	public int size() {
 		return sequences.size();
 	}
-
+	
 	public RealVector computeDeltaW(double alpha, double lambda, RealVector w) {
 		RealVector res = new OpenMapRealVector(new double[] {0D, 0D, 0D, 0D, 0D});
 		for (Sequence sequence : sequences) {
@@ -56,6 +56,10 @@ public class TrainingSet {
 			res = res.add(deltaW);
 		}
 		return res;
+	}
+
+	public RealVector computeW(double alpha, double lambda, RealVector w) {
+		return w.add(computeDeltaW(alpha, lambda, w));
 	}
 
 }

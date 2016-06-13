@@ -87,7 +87,13 @@ public class Sequence {
 		}
 		return res;
 	}
+	
+	//w = w + sum(deltaWt)
+	public RealVector computeW(double alpha, double lambda, RealVector w) {
+		return w.add(computeDeltaW(alpha, lambda, w));
+	}
 
+	//deltaWt = alpha*(wT*xt+1 - wT*xt)sum(x1+x2+...+xt)
 	private RealVector computeDeltaW(double alpha, double lambda, RealVector w, int t) {
 		double diffNextPredictions = successivePredictions(w, t);
 		RealVector sumPrevPredictions = previousPredictions(lambda, t);

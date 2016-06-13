@@ -1,7 +1,5 @@
 package com.gt.rldm.midterm;
 
-import static com.gt.rldm.midterm.Utils.*;
-
 import java.util.List;
 
 import org.apache.commons.math3.linear.OpenMapRealVector;
@@ -32,21 +30,17 @@ public class RepeatedPresentation {
 	private void compute(String filePath) {
 		List<TrainingSet> trainingSets = new DataGenerator(filePath).getTrainingSets();
 		double[] initialValues = initW();
-		RealVector currentW = new OpenMapRealVector(initialValues);
+		RealVector w = new OpenMapRealVector(initialValues);
 		RealVector prevW = null;
 		int iterations = 0;
 		do {
 			iterations++;
-			prevW = currentW;
-			printVector(prevW);
+			prevW = w;
 			for (TrainingSet trainingSet : trainingSets) {
-				RealVector deltaW = trainingSet.computeDeltaW(alpha, lambda, currentW);
-				printVector(deltaW);
-				currentW = currentW.add(deltaW);
-				printVector(currentW);
+				w = w.add(trainingSet.computeDeltaW(alpha, lambda, w));
 			}
-		} while (!almostSame(prevW, currentW));
-		this.w = currentW;
+		} while (!almostSame(prevW, w));
+		this.w = w;
 		System.out.println(iterations);
 	}
 
