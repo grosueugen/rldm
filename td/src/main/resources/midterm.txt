@@ -24,3 +24,17 @@ After all training sets or after each training set (should I compute almostSame(
 9. It is amazing that regardless of the init of w, the RMS is always the same for the same <alpha, lambda>!
 
 10. Memorie: 2 numere, nu n
+
+11. !!! using a high alpha = 0.1, the formula does not convergence! It is exactly like ML, where the gradient just goes by the local min and 
+increases from that point on!
+
+12. !!! use a training set with less/more sequences in it and see the error on those!
+
+13. !!! from alpha=0.01, the alg coverges n average on 100 iterations, with an error of 0.022, whereas 
+from alpha=0.001, the alg converges on average on 700 iterations (so slower) with a lower error 0.013!
+Why?!?!
+
+14. !!! with alpha=0 (deltaW=0, so no learning), the error obtained is actually 0.52, converges
+in just 1 iteration; this error 0.52 is higher than 0.19 from paper, so I believe the paper is quite wrong!
+
+15. Init w with ideal values! 

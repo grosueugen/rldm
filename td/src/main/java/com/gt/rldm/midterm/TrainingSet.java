@@ -57,9 +57,42 @@ public class TrainingSet {
 		}
 		return res;
 	}
+	
+	// Computes w after each sequence by applying the formula: w = w + sum(deltaWt)
+	public RealVector computeWAfterEach(double alpha, double lambda, RealVector w) {
+		for (Sequence sequence : sequences) {
+			w = sequence.computeW(alpha, lambda, w);
+		}
+		return w;
+	}
 
-	public RealVector computeW(double alpha, double lambda, RealVector w) {
+	// Computes w after ALL sequences (only once) by applying the formula: w = w + sum(sum(deltaWt))
+	public RealVector computeWAfterAll(double alpha, double lambda, RealVector w) {
 		return w.add(computeDeltaW(alpha, lambda, w));
+	}
+	
+	// Computes w after ALL sequences by applying the formula: w = w + sum(sum(deltaWt))
+	// until convergence
+	public RealVector computeW(double alpha, double lambda, double epsilon, RealVector w) {
+		RealVector prevW = null;
+		int iterations = 0;
+		do {
+			iterations++;
+			prevW = w;
+			w = computeWAfterAll(alpha, lambda, w);
+		} while (!almostSame(prevW, w, epsilon));
+		//System.out.println("Converged in " + iterations + " iterations");
+		return w;
+	}
+	
+	private boolean almostSame(RealVector oldW, RealVector newW, double epsilon) {
+		double absMax = Integer.MIN_VALUE;
+		RealVector diff = oldW.subtract(newW);
+		for (int i = 0; i < diff.getDimension(); i++) {
+			double absValue = Math.abs(diff.getEntry(i));
+			if (absMax < absValue) absMax = absValue;
+		}
+		return (absMax < epsilon);
 	}
 
 }

@@ -5,25 +5,18 @@ import java.util.List;
 import org.apache.commons.math3.linear.OpenMapRealVector;
 import org.apache.commons.math3.linear.RealVector;
 
-/**
- * Used for generating figure 3
- * @author Eugen
- *
- */
-public class RepeatedPresentation {
-	
-	private final int dimension = 5;
+public class OnePresentation {
+
+private final int dimension = 5;
 	
 	private final double alpha;
 	private final double lambda;
-	private final double epsilon;
 	
 	private RealVector w;
 	
-	public RepeatedPresentation(String filePath, double alpha, double lambda, double epsilon) {		
+	public OnePresentation(String filePath, double alpha, double lambda) {		
 		this.alpha = alpha;
 		this.lambda = lambda;
-		this.epsilon = epsilon;
 		compute(filePath);
 	}
 
@@ -33,7 +26,7 @@ public class RepeatedPresentation {
 		RealVector w = new OpenMapRealVector(initialValues);
 		RealVector res = new OpenMapRealVector(new double[]{0D,0D,0D,0D,0D});
 		for (TrainingSet trainingSet : trainingSets) {
-			res = res.add(trainingSet.computeW(alpha, lambda, epsilon, w));
+			res = res.add(trainingSet.computeWAfterEach(alpha, lambda, w));
 		}
 		this.w = res.mapDivide(trainingSets.size());
 	}
@@ -41,7 +34,7 @@ public class RepeatedPresentation {
 	private double[] initW() {
 		double[] res = new double[dimension];
 		for (int i = 0; i < dimension; i++) {
-			res[i] = Math.random();
+			res[i] = 0.5D;
 		}
 		return res;
 	}
@@ -49,5 +42,5 @@ public class RepeatedPresentation {
 	public RealVector getW() {
 		return w;
 	}
-
+	
 }
