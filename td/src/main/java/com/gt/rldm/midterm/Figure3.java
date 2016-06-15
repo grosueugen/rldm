@@ -7,6 +7,7 @@ public class Figure3 {
 		double alpha = 0.001;		
 		double epsilon = 0.0001;
 		double[] lambdas = new double[] {0, 0.1, 0.3, 0.5, 0.7, 0.9, 1};
+		//double[] lambdas = new double[] {0.1, 1};
 		for (double lambda : lambdas) {
 			RepeatedPresentation rp = new RepeatedPresentation(filePath, alpha, lambda, epsilon);
 			double rms = rp.rmse();
