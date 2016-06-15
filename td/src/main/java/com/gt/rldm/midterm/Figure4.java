@@ -16,8 +16,9 @@ public class Figure4 {
 	public static void main(String[] args) {
 		List<Double> lambdas = Arrays.asList(new Double[] {0D, 0.3D, 0.8D, 1D});
 		List<Double> alphas = Arrays.asList(new Double[] {0D, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6});
-		String filePath = "D:\\projects\\rldm\\td\\src\\main\\resources\\trainingSets.txt";
+		String filePath = "C:\\gen\\projects\\rldm\\td\\src\\main\\resources\\trainingSets.txt";
 		
+		// rows: lambdas, columns: alphas
 		Table<Double, Double, Double> table = ArrayTable.create(lambdas, alphas);
 		for (double lambda : lambdas) {
 			for (double alpha : alphas) {
@@ -27,6 +28,13 @@ public class Figure4 {
 			}
 		}
 		System.out.println(table);
+		for (double lambda: table.rowKeySet()) {
+			System.out.println("============" + lambda);
+			for (double alpha : table.columnKeySet()) {
+				Double rms = table.get(lambda, alpha);
+				System.out.println(alpha + "," + rms);
+			}
+		}
 	}
 	
 	private static double computeRMS(RealVector w) {
