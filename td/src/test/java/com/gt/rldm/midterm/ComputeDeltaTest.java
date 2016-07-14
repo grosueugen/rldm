@@ -58,7 +58,7 @@ public class ComputeDeltaTest {
 		RealVector deltaW = ts.computeDeltaW(0.1D, 0.5D, w);
 		double[] expectedDeltaW = seq1.computeDeltaW(0.1, 0.5, w).add(seq2.computeDeltaW(0.1, 0.5, w)).toArray();
 		assertEquals(expectedDeltaW, deltaW);
-		assertEquals(w.add(deltaW).toArray(), ts.computeWAfterAll(0.1, 0.5, w));
+		assertEquals(w.add(deltaW).toArray(), ts.accumulateAllChanges(0.1, 0.5, w));
 	}
 
 	private void assertEquals(double[] expected, RealVector deltaW) {

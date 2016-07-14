@@ -79,39 +79,61 @@ public class Sequence {
 		return sb.toString();
 	}
 
+	/**
+	 * Compute the update rule according to formula: w = w + sum(deltaWt)
+	 * 
+	 * @param alpha learning rate
+	 * @param lambda weight previous prediction parameter
+	 * @param w weight parameter
+	 * @return the new w after applying update rule
+	 */
+	public RealVector computeW(double alpha, double lambda, RealVector w) {
+		return w.add(computeDeltaW(alpha, lambda, w));
+	}
+	
+	/**
+	 * Computes change in w for this sequence, when the prediction function is linear function.
+	 * 
+	 * @param alpha learning rate
+	 * @param lambda weight previous prediction parameter
+	 * @param w weight parameter
+	 * @return the change in w
+	 */
 	public RealVector computeDeltaW(double alpha, double lambda, RealVector w) {
 		RealVector res = new OpenMapRealVector(new double[] {0D, 0D, 0D, 0D, 0D});
-		for (int i = 0; i < observations.size(); i++) {
-			RealVector deltaWt = computeDeltaW(alpha, lambda, w, i);
+		for (int t = 0; t < observations.size(); t++) {
+			RealVector deltaWt = computeDeltaWt(alpha, lambda, w, t);
 			res = res.add(deltaWt);
 		}
 		return res;
 	}
 	
-	//w = w + sum(deltaWt)
-	public RealVector computeW(double alpha, double lambda, RealVector w) {
-		return w.add(computeDeltaW(alpha, lambda, w));
+	/**
+	 * Computes the sequence delta update rule at time t, according to formula (4) 
+	 * when the prediction function is linear.
+	 * 
+	 * @param alpha learning rate
+	 * @param lambda weight previous prediction parameter
+	 * @param w weight parameter
+	 * @param t time t
+	 * @return change in w at time t
+	 */
+	private RealVector computeDeltaWt(double alpha, double lambda, RealVector w, int t) {
+		return prevPredictions(lambda, t).mapMultiply(alpha * diffNextPrediction(w, t));
 	}
 
-	//deltaWt = alpha*(wT*xt+1 - wT*xt)sum(x1+x2+...+xt)
-	private RealVector computeDeltaW(double alpha, double lambda, RealVector w, int t) {
-		double diffNextPredictions = successivePredictions(w, t);
-		RealVector sumPrevPredictions = previousPredictions(lambda, t);
-		return sumPrevPredictions.mapMultiply(alpha * diffNextPredictions);
-	}
-
-	private RealVector previousPredictions(double lambda, int t) {
+	private RealVector prevPredictions(double lambda, int t) {
 		RealVector res = new OpenMapRealVector(new double[] {0D, 0D, 0D, 0D, 0D});
 		for (int i = 0; i <= t; i++) {
 			RealVector obs = observations.get(i);
-			double lambdaPow = Math.pow(lambda, (t-i));//power + i = t => power = t-i
+			double lambdaPow = Math.pow(lambda, (t-i));
 			RealVector obsLambda = obs.mapMultiply(lambdaPow);
 			res = res.add(obsLambda);
 		}
 		return res;
 	}
 
-	private double successivePredictions(RealVector w, int t) {
+	private double diffNextPrediction(RealVector w, int t) {
 		RealVector xt = observations.get(t);
 		double wTxt = w.dotProduct(xt);
 		double wTxt1;

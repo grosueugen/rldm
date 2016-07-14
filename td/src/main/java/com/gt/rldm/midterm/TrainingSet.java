@@ -49,6 +49,13 @@ public class TrainingSet {
 		return sequences.size();
 	}
 	
+	/**
+	 * 
+	 * @param alpha learning rate
+	 * @param lambda weight previous prediction parameter
+	 * @param w weight parameter that needs to be updated
+	 * @return
+	 */
 	public RealVector computeDeltaW(double alpha, double lambda, RealVector w) {
 		RealVector res = new OpenMapRealVector(new double[] {0D, 0D, 0D, 0D, 0D});
 		for (Sequence sequence : sequences) {
@@ -58,8 +65,16 @@ public class TrainingSet {
 		return res;
 	}
 	
-	// Computes w after each sequence by applying the formula: w = w + sum(deltaWt)
-	public RealVector computeWAfterEach(double alpha, double lambda, RealVector w) {
+	/**
+	 * Computes w by applying the update rule for each sequence in the training set.
+	 * The newly computed w is the input for next sequence.
+	 *   
+	 * @param alpha learning rate
+	 * @param lambda weight previous prediction parameter
+	 * @param w weight parameter that needs to be updated
+	 * @return the new w according to all sequences in this training set  
+	 */
+	public RealVector computeW(double alpha, double lambda, RealVector w) {
 		for (Sequence sequence : sequences) {
 			w = sequence.computeW(alpha, lambda, w);
 		}
@@ -67,7 +82,7 @@ public class TrainingSet {
 	}
 
 	// Computes w after ALL sequences (only once) by applying the formula: w = w + sum(sum(deltaWt))
-	public RealVector computeWAfterAll(double alpha, double lambda, RealVector w) {
+	public RealVector accumulateAllChanges(double alpha, double lambda, RealVector w) {
 		return w.add(computeDeltaW(alpha, lambda, w));
 	}
 	
@@ -79,9 +94,9 @@ public class TrainingSet {
 		do {
 			iterations++;
 			prevW = w;
-			w = computeWAfterAll(alpha, lambda, w);
+			w = accumulateAllChanges(alpha, lambda, w);
 		} while (!almostSame(prevW, w, epsilon));
-		//System.out.println("Converged in " + iterations + " iterations");
+		System.out.println("Converged in " + iterations + " iterations");
 		return w;
 	}
 	

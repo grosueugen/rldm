@@ -7,8 +7,6 @@ import org.apache.commons.math3.linear.RealVector;
 
 public class OnePresentation {
 	
-	public final static double[] idealW = { 1.0/6, 2.0/6, 3.0/6, 4.0/6, 5.0/6 };
-
 	private final int dimension = 5;
 	
 	private final double alpha;
@@ -23,15 +21,20 @@ public class OnePresentation {
 	}
 
 	private void compute(String filePath) {
-		List<TrainingSet> trainingSets = new DataGenerator(filePath).getTrainingSets();
-		double[] initialValues = initW();
-		RealVector w = new OpenMapRealVector(initialValues);
-		double r = 0D;
+		List<TrainingSet> trainingSets = new DataGenerator(filePath).getTrainingSets(); 
+		double[] initialValues = initW(); RealVector w = new OpenMapRealVector(initialValues);
+		double sumRMSE = 0D; int i = 0;
 		for (TrainingSet trainingSet : trainingSets) {
-			RealVector tsW = trainingSet.computeWAfterEach(alpha, lambda, w);
-			r+= computeRMS(tsW);
+			RealVector tsW = trainingSet.computeW(alpha, lambda, w);
+			double tsRMSE = new RMSE(tsW).rmse();
+			if (tsRMSE >= 1.5) { // outliers
+				//log.debug("ts[" + i + "]:" + rmse2 + ": outlier");
+			} else {
+				sumRMSE+= tsRMSE;			
+				i++;
+			}
 		}
-		rmse = r/trainingSets.size();
+		if (i == 0) rmse = -1; else rmse = sumRMSE/i;
 	}
 
 	private double[] initW() {
@@ -40,15 +43,6 @@ public class OnePresentation {
 			res[i] = 0.5D;
 		}
 		return res;
-	}
-	
-	private double computeRMS(RealVector w) {
-		double sum = 0;
-		for (int i = 0; i < w.getDimension(); i++) {
-			double error = w.getEntry(i) - idealW[i];
-			sum += Math.pow(error, 2);
-		}
-		return Math.sqrt(sum/w.getDimension());
 	}
 	
 	public double rmse() {
