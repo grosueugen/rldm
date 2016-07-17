@@ -231,9 +231,9 @@ public class GridGameExample {
 		//choose one
 
 		//VICoCoTest();
-		//VICorrelatedTest();
+		VICorrelatedTest();
 		//QLCoCoTest();
-		saInterface();
+		//saInterface();
 
 	}
 
